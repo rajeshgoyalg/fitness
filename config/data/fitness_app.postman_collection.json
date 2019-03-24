@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "1b0f9361-fde3-4bd2-9bf5-5fb1f651ca44",
+		"name": "fitness_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "plan/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/plan/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"plan",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/user/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"user",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "day/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/day/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"day",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exercise/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/exercise/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"exercise",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan/read_one.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/plan/read_one.php?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"plan",
+						"read_one.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/read_one.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/user/read_one.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"user",
+						"read_one.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan/create.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"A to Z workout\",\n    \"days\": [\n        {\n            \"id\": \"1\",\n            \"week_day\": \"6\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/plan/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"plan",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "day/create.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"HIIT Workout 2\",\n    \"exercises\": [\n        {\n            \"id\": \"1\",\n            \"exercise_order\": \"6\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/day/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"day",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/create.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Rajesh\",\n    \"last_name\": \"Goyal\",\n    \"email\": \"rajeshgoyalg@gmail.com\",\n    \"plan_id\": \"3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/user/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"user",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exercise/create.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bent Over Row\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/exercise/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"exercise",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan/update.php",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 20,\n    \"name\": \"A to B workout\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/plan/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"plan",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/update.php",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n    \"first_name\": \"Aryan\",\n    \"last_name\": \"Goyal\",\n    \"email\": \"aryangoyalg@gmail.com\",\n    \"plan_id\": \"3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/user/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"user",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/plan/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"plan",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "day/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 16\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/day/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"day",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 8\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/user/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"user",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exercise/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 52\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fitness/api/exercise/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fitness",
+						"api",
+						"exercise",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7fcacbf7-f868-4700-906a-342b453e50bb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b90d96b1-9b0d-49a7-8660-7dee839c9fe1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

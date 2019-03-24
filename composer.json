@@ -1,0 +1,17 @@
+{
+  "name": "rajeshgoyalg/fitness",
+  "authors": [
+    {
+      "name": "Rajesh Goyal",
+      "email": "rajeshgoyalg@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Api\\": "src/"
+    }
+  }
+}
